@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Application" type="HaxeApplicationRunConfiguration" factoryName="Haxe Application" singleton="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <module name="Application" />
+    <option name="customDebugPort" value="6972" />
+    <option name="customExecutable" value="false" />
+    <option name="customExecutablePath" value="" />
+    <option name="customFileToLaunch" value="false" />
+    <option name="customFileToLaunchPath" value="" />
+    <option name="customRemoteDebugging" value="false" />
+    <module name="Application" />
+    <method />
+  </configuration>
+</component>
