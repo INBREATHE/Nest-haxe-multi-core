@@ -9,10 +9,9 @@ import nest.patterns.command.AsyncMacroCommand;
 
 class StartupCommand extends AsyncMacroCommand
 {
-    public function new () {}
-
     override public function initializeAsyncMacroCommand() : Void
     {
+        trace("> initializeAsyncMacroCommand");
         this.addSubCommands([
         	PrepareModulesCommand		// AsyncCommand
         ,	PrepareModelCommand     	// AsyncCommand

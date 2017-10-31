@@ -4,8 +4,6 @@ import nest.interfaces.IAsyncCommand;
 
 class AsyncCommand extends SimpleCommand implements IAsyncCommand
 {
-    public function new() { super(); }
-
     //==================================================================================================
     public function setOnComplete ( onCompleteCallback:Void->Void ) : Void {
     //==================================================================================================

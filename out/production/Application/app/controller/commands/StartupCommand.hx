@@ -1,17 +1,23 @@
 package app.controller.commands;
 
-import app.model.proxy.UserProxy;
-import nest.interfaces.INotification;
-import nest.patterns.command.SimpleCommand;
+import app.controller.commands.prepare.PrepareModelCommand;
+import app.controller.commands.prepare.PrepareCompleteCommand;
+import app.controller.commands.prepare.PrepareViewCommand;
+import app.controller.commands.prepare.PrepareControllerCommand;
+import app.controller.commands.prepare.PrepareModulesCommand;
+import nest.patterns.command.AsyncMacroCommand;
 
-class StartupCommand extends SimpleCommand
+class StartupCommand extends AsyncMacroCommand
 {
-    @Inject public var userProxy:UserProxy;
-
-    public function new () {}
-
-    override public function execute( notification:INotification ):Void {
-        trace("-> execute: body = " + notification.getBody());
-        trace("-> execute: userProxy = " + userProxy);
+    override public function initializeAsyncMacroCommand() : Void
+    {
+        trace("> initializeAsyncMacroCommand");
+        this.addSubCommands([
+        	PrepareModulesCommand		// AsyncCommand
+        ,	PrepareModelCommand     	// AsyncCommand
+        ,	PrepareControllerCommand	// AsyncCommand
+        ,	PrepareViewCommand			// AsyncCommand
+        ,	PrepareCompleteCommand		// SimpleCommand
+        ]);
     }
 }

@@ -53,8 +53,9 @@ class View implements IView
         mediator.initializeNotifier( _multitonKey );
         mediatorMap.set( mediatorName, mediator );
 
-//        Injector.mapInject( mediator );
-//		trace("\n> Nest -> View -> registerMediator:", mediatorName);
+        Injector.mapTargetClass( Type.getClass( mediator ), _multitonKey );
+        Injector.injectTo( mediator, _multitonKey );
+		trace("> registerMediator: " + mediatorName);
 
         var interestsNotifications:Array<String> = mediator.getListNotifications();
         var interestsNFunctions:Array<NFunction> = mediator.getListNFunctions();
@@ -69,7 +70,7 @@ class View implements IView
         counter = interestsNotifications.length;
         while(counter-- > 0) {
             notifyName = interestsNotifications[counter];
-            trace("> registerMediator -> notification: name = " + notifyName + " | method = " + notifyMethod);
+            trace("> registerMediator -> notification: name = " + notifyName);
             registerObserver( notifyName, new Observer( notifyMethod, mediator ) );
         }
 

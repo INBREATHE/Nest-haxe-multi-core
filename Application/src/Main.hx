@@ -1,5 +1,7 @@
 package ;
 
+import nest.patterns.observer.Notification;
+import app.controller.commands.StartupCommand;
 import nest.entities.application.Application;
 import nest.entities.application.ApplicationMediator;
 import nest.entities.application.ApplicationFacade;
@@ -21,9 +23,10 @@ class Main extends Sprite  {
         var appMediator:ApplicationMediator = new ApplicationMediator(app);
 
         appFacade.registerMediator( ApplicationMediator.NAME, appMediator );
+        appFacade.registerCommand( STARTUP, StartupCommand );
 
         this.addChild(app);
 
-        appFacade.startup();
+        appFacade.exec( new Notification( STARTUP ) );
     }
 }

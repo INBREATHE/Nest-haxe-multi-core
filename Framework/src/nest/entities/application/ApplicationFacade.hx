@@ -19,14 +19,4 @@ class ApplicationFacade extends Facade
         READY(default, never)		: String = "nest_command_application_ready";
     public static var
         CORE(default, never)		: String = "nest_application_core";
-
-    override public function initializeController() : Void
-    {
-        this.registerCommand( STARTUP, StartupCommand );
-    }
-
-    public function startup() : Void
-    {
-        this.exec( new Notification( STARTUP ));
-    }
 }

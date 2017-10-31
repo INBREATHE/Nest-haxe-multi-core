@@ -1,10 +1,10 @@
 package ;
 
+import nest.patterns.observer.Notification;
+import app.controller.commands.StartupCommand;
 import nest.entities.application.Application;
 import nest.entities.application.ApplicationMediator;
 import nest.entities.application.ApplicationFacade;
-import nest.patterns.observer.Notification;
-import app.controller.commands.StartupCommand;
 import app.model.proxy.UserProxy;
 import openfl.display.Sprite;
 
@@ -22,14 +22,11 @@ class Main extends Sprite  {
         var appFacade:ApplicationFacade = cast ApplicationFacade.getInstance(CORE);
         var appMediator:ApplicationMediator = new ApplicationMediator(app);
 
+        appFacade.registerMediator( ApplicationMediator.NAME, appMediator );
+        appFacade.registerCommand( STARTUP, StartupCommand );
+
         this.addChild(app);
 
-        appFacade.registerProxy( UserProxy );
-
-        appFacade.registerMediator( ApplicationMediator.NAME, appMediator );
-
-        appFacade.registerCommand( STARTUP, StartupCommand );
-        appFacade.exec( new Notification( STARTUP, appFacade.getProxy( UserProxy ) ));
-        appFacade.exec( new Notification( STARTUP ));
+        appFacade.exec( new Notification( STARTUP ) );
     }
 }

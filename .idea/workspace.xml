@@ -2,62 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412d5018-2e2b-423b-92ab-dc3119f9da9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareCompleteCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareControllerCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModulesCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationMediator.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationNotification.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/Popup.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupData.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupEventData.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupEvents.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupNotification.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupsMediator.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenCache.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenCommands.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenData.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreensProxy.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/ChangeScreenCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/RegisterScreenCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/RemoveScreenCommand.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/interfaces/IPopup.hx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Framework/src/nest/interfaces/ITransition.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/bin/flash/bin/Application.swf" afterPath="$PROJECT_DIR$/Application/bin/flash/bin/Application.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/bin/flash/haxe/ApplicationMain.hx" afterPath="$PROJECT_DIR$/Application/bin/flash/haxe/ApplicationMain.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/Main.hx" afterPath="$PROJECT_DIR$/Application/src/Main.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/core/View.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/core/View.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/EntityType.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/EntityType.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/application/Application.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/Application.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/elements/Navigator.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/elements/Navigator.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/elements/Transition.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/elements/Transition.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/screen/Screen.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/Screen.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenMediator.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenMediator.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/injector/InjectorMacro.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/injector/InjectorMacro.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/interfaces/IFacade.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/interfaces/IFacade.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/interfaces/IView.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/interfaces/IView.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/mediator/Mediator.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/mediator/Mediator.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/observer/NFunction.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/observer/NFunction.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Application/Main.hx" afterPath="$PROJECT_DIR$/out/production/Application/Main.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Application/app/controller/commands/StartupCommand.hx" afterPath="$PROJECT_DIR$/out/production/Application/app/controller/commands/StartupCommand.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/Controller.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/core/Controller.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/View.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/core/View.hx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/injector/Injector.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/injector/Injector.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IFacade.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IFacade.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IView.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IView.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/facade/Facade.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/patterns/facade/Facade.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/mediator/Mediator.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/patterns/mediator/Mediator.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/NFunction.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/NFunction.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/Notifier.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/Notifier.hx" />
     </list>
     <ignored path="Haxe-Framework-Nest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationMediator.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationMediator.hx">
+      <file leaf-file-name="Injector.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="144">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,75 +53,55 @@
       <file leaf-file-name="Main.hx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/Main.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+            <state relative-caret-position="425">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationFacade.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx">
+      <file leaf-file-name="Facade.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="229">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Framework/src/nest/core/View.hx">
+      <file leaf-file-name="AsyncMacroCommand.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="161">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartupCommand.hx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Notifier.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/core/Controller.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="63" column="75" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartupCommand.hx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrepareControllerCommand.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareControllerCommand.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrepareViewCommand.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrepareModelCommand.hx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrepareCompleteCommand.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareCompleteCommand.hx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -169,11 +110,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrepareModulesCommand.hx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModulesCommand.hx">
+      <file leaf-file-name="AsyncCommand.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrepareModelCommand.hx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Framework/libs/minject/provider/ValueProvider.hx" />
-        <option value="$PROJECT_DIR$/Framework/libs/minject/InjectorMacro.hx" />
-        <option value="$PROJECT_DIR$/Framework/libs/minject/InjectorInfo.hx" />
         <option value="$PROJECT_DIR$/Framework/libs/minject/Injector.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/core/Model.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/patterns/command/PoolCommand.hx" />
@@ -217,7 +165,6 @@
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupNotification.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/ChangeScreenCommand.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/injector/InjectorMacro.hx" />
-        <option value="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/RegisterScreenCommand.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/screen/commands/RemoveScreenCommand.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenCommands.hx" />
@@ -236,21 +183,25 @@
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/elements/Navigator.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/elements/Transition.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/screen/Screen.hx" />
-        <option value="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationMediator.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/patterns/mediator/Mediator.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/application/Application.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/core/View.hx" />
-        <option value="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" />
         <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModulesCommand.hx" />
         <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareControllerCommand.hx" />
-        <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" />
         <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareCompleteCommand.hx" />
+        <option value="$PROJECT_DIR$/out/production/Framework/nest/patterns/facade/Facade.hx" />
         <option value="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" />
         <option value="$PROJECT_DIR$/Application/src/Main.hx" />
+        <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" />
+        <option value="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx" />
         <option value="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" />
+        <option value="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" />
+        <option value="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" />
+        <option value="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx" />
+        <option value="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" />
       </list>
     </option>
   </component>
@@ -1066,7 +1017,7 @@
       <option name="presentableId" value="Default" />
       <updated>1509359164603</updated>
       <workItem from="1509359169090" duration="43859000" />
-      <workItem from="1509426932135" duration="18749000" />
+      <workItem from="1509426932135" duration="20558000" />
     </task>
     <task id="LOCAL-00001" summary="Injector with basic meta @inject keyword for Proxies only">
       <created>1509427187838</created>
@@ -1075,11 +1026,25 @@
       <option name="project" value="LOCAL" />
       <updated>1509427187838</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Registration for Mediators, ScreenMediator and PopupMediator">
+      <created>1509465832546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509465832546</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Additional files for previous commit">
+      <created>1509465920243</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509465920243</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62608000" />
+    <option name="totallyTimeSpent" value="64417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1315" height="1080" extended-state="0" />
@@ -1122,7 +1087,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Injector with basic meta @inject keyword for Proxies only" />
-    <option name="LAST_COMMIT_MESSAGE" value="Injector with basic meta @inject keyword for Proxies only" />
+    <MESSAGE value="Registration for Mediators, ScreenMediator and PopupMediator" />
+    <MESSAGE value="Additional files for previous commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional files for previous commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1133,30 +1100,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreensProxy.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenData.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/screen/ScreenCache.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/popup/PopupNotification.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1381,14 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/interfaces/INotifier.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/observer/NFunction.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1401,22 +1336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1437,26 +1356,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/screen/Screen.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="716">
           <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/core/Controller.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1477,14 +1380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModulesCommand.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1501,14 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareCompleteCommand.hx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1517,26 +1404,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx">
+    <entry file="file://$PROJECT_DIR$/out/production/Framework/nest/patterns/facade/Facade.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/Main.hx">
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/Main.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/facade/Facade.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/interfaces/INotifier.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/observer/Notifier.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/core/Controller.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="63" column="75" selection-start-line="63" selection-start-column="75" selection-end-line="63" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

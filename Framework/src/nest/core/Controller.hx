@@ -32,6 +32,7 @@ class Controller implements IController
     public function registerCommand        ( notificationName : String, commandClass : Class<Dynamic> ) : Void {
     //==================================================================================================
         Injector.mapTargetClass( commandClass, _multitonKey );
+        trace("> registerCommand: notificationName = " + notificationName);
         _classMap.set( notificationName, commandClass );
     }
 
@@ -61,9 +62,11 @@ class Controller implements IController
             if(_classMap.exists( name )) {
                 commandClass = _classMap.get(notification.getName());
                 commandInstance = Type.createEmptyInstance( commandClass );
+                commandInstance.initializeNotifier( _multitonKey );
                 Injector.injectTo( commandInstance, _multitonKey );
             } else throw 'NO COMMAND REGISTERED TO ${ name }';
         }
+        trace("> executeCommand: " + commandInstance);
         commandInstance.execute( notification );
         if(!isPoolCommand) Injector.clear( commandInstance, _multitonKey );
     }
