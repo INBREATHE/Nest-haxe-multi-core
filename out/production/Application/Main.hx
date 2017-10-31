@@ -22,5 +22,6 @@ class Main extends Sprite  {
 
         facade.registerCommand( STARTUP, StartupCommand );
         facade.exec( new Notification( STARTUP, facade.getProxy( UserProxy ) ));
+        facade.exec( new Notification( STARTUP ));
     }
 }

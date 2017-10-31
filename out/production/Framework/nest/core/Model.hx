@@ -1,4 +1,5 @@
 package nest.core;
+import nest.injector.Injector;
 import nest.interfaces.IProxy;
 import nest.interfaces.IModel;
 
@@ -30,6 +31,7 @@ class Model implements IModel
         var proxyClassName:String = Type.getClassName( proxyClass );
         var proxy:IProxy = cast Type.createEmptyInstance( proxyClass );
         proxy.initializeNotifier( _multitonKey );
+        Injector.mapSource( proxy, _multitonKey );
         proxyMap.set( proxyClassName, proxy );
         proxy.onRegister();
     }

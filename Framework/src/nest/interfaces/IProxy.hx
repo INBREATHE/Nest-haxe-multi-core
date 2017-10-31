@@ -1,6 +1,6 @@
 package nest.interfaces;
 
-interface IProxy extends INotifier extends IInjectable
+interface IProxy extends INotifier
 {
     function getProxyName   () : String;
     function getData        () : Dynamic;

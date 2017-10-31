@@ -1,7 +1,7 @@
 package nest.interfaces;
 import nest.patterns.observer.NFunction;
 
-interface IMediator extends INotifier extends IInjectable
+interface IMediator extends INotifier
 {
     function getMediatorName        () : String;
     function getViewComponent       () : Dynamic;

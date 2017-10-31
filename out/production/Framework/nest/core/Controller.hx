@@ -1,4 +1,5 @@
 package nest.core;
+import haxe.rtti.Meta;
 import nest.injector.Injector;
 import nest.interfaces.INotification;
 import nest.interfaces.ICommand;
@@ -20,7 +21,8 @@ class Controller implements IController
         initializeController();
     }
 
-    private var _commandMap 	: Map<String, Class<Dynamic>> = new Map<String, Class<Dynamic>>();
+    private var _classMap 	    : Map<String, Class<Dynamic>> = new Map<String, Class<Dynamic>>();
+    private var _commandsPool   : Map<String, ICommand> = new Map<String, ICommand>();
     private var _replyCountMap 	: Map<String, Int> = new Map<String, Int>();
 
     private function initializeController() : Void {
@@ -30,18 +32,35 @@ class Controller implements IController
     //==================================================================================================
     public function registerCommand        ( notificationName : String, commandClass : Class<Dynamic> ) : Void {
     //==================================================================================================
-        _commandMap.set( notificationName, commandClass );
+        Injector.mapTargetClass( commandClass, _multitonKey );
+        _classMap.set( notificationName, commandClass );
     }
-    public function registerPoolCommand   ( notificationName : String, commandClass : Class<Dynamic> ) : Void {}
+    public function registerPoolCommand   ( notificationName : String, commandClass : Class<Dynamic> ) : Void {
+        var commandInstance : ICommand = Type.createEmptyInstance( commandClass );
+        _commandsPool.set( notificationName, commandInstance );
+    }
     public function registerCountCommand   ( notificationName : String, commandClass : Class<Dynamic>, replyCount : Int ) : Void {}
     public function executeCommand         ( notification : INotification ) : Void {
-        var commandClass : Class<Dynamic> = _commandMap.get(notification.getName());
-        var commandInstance:ICommand = Type.createEmptyInstance( commandClass );
+        var name:String = notification.getName();
+        var commandClass : Class<Dynamic>;
+        var commandInstance : ICommand;
+
+        if(_commandsPool.exists( name )) {
+            commandInstance = _commandsPool.get(name);
+            commandClass = Type.getClass( commandInstance );
+        } else {
+            if(_classMap.exists( name )) {
+                commandClass = _classMap.get(notification.getName());
+                commandInstance = Type.createEmptyInstance( commandClass );
+                Injector.injectTo( commandInstance, _multitonKey );
+            } else throw 'NO COMMAND REGISTERED TO ${ name }';
+        }
         commandInstance.execute( notification );
+        Injector.clear( commandInstance, _multitonKey );
     }
     public function removeCommand          ( notificationName : String ) : Bool { return false; }
     public function hasCommand             ( notificationName : String ) : Bool {
-        return _commandMap.exists( notificationName );
+        return _classMap.exists( notificationName );
     }
 
     //==================================================================================================

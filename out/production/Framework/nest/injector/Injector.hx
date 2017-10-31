@@ -1,69 +1,89 @@
 package nest.injector;
-import haxe.rtti.Meta;
-import nest.interfaces.IAcceptable;
-import nest.interfaces.IInjectable;
-import nest.interfaces.INotifier;
 
+import haxe.rtti.Meta;
+
+#if !macro @:build(nest.injector.InjectorMacro.findInjectMetadata()) #end
 @:final class Injector
 {
-
-    static private var INJECT(default, never):String = "Inject";
-
-    static private var _core_targets(default, never): Map<String, Dynamic> = new Map<String, Dynamic>();
-    static private var _core_source(default, never): Map<String, Map<String, INotifier>> 	= new Map();
+    static private var _multiton_sources(default, never): Map<String, Map<String, Dynamic>> 	= new Map<String, Map<String, Dynamic>>();
+    static private var _multiton_targets(default, never): Map<String, Map<String, Map<String, String>>> = new Map<String, Map<String, Map<String, String>>>();
 
     //==================================================================================================
-    static public function mapSource( key:String, source : INotifier ) : Void {
+    static public function mapSource( source : Dynamic, multitonKey : String ) : Void {
     //==================================================================================================
-        var multitonKey   : String = source.getMultitonKey();
-        var sourcesCore   : Map<String, INotifier> = _core_source[ multitonKey ];
-        if(sourcesCore == null) {
-            sourcesCore = new Map<String, INotifier>();
-            _core_source[ multitonKey ] = sourcesCore;
+        if(!_multiton_sources.exists( multitonKey )) _multiton_sources.set( multitonKey, new Map<String, Dynamic>());
+        var sources : Map<String, Dynamic> = _multiton_sources.get( multitonKey );
+        var key : String = Type.getClassName( Type.getClass( source ) );
+        sources.set(key, source);
+        trace("-> mapSource: at " + multitonKey + " -> " + key);
+    }
+
+    //==================================================================================================
+    static public function mapTargetClass( classRef : Class<Dynamic>, multitonKey : String ) : Void {
+    //==================================================================================================
+        var classRefName:String = Type.getClassName(classRef);
+
+        var meta = Meta.getType(classRef);
+        var inject:Array<String> = cast meta.inject;
+
+        if(!_multiton_targets.exists( multitonKey )) _multiton_targets.set( multitonKey, new Map<String, Map<String, String>>() );
+        var targets : Map<String, Map<String, String>> = _multiton_targets.get( multitonKey );
+
+        if(!targets.exists( classRefName )) targets.set( classRefName, new Map<String, String>() );
+        var targetInjections:Map<String, String> = targets.get( classRefName );
+
+        var fieldNameType:Array<String>;
+        var fieldName:String;
+        var fieldType:String;
+
+        for(field in inject) {
+            fieldNameType = field.split(":");
+            fieldName = fieldNameType[0];
+            fieldType = fieldNameType[1];
+            targetInjections.set(fieldName, fieldType);
         }
-        trace("-> mapSource: key = " + key);
-        sourcesCore[ key ] = source;
     }
 
     //==================================================================================================
-    static public function mapTarget( target : IAcceptable, multitonKey : String ) : Void {
-   //==================================================================================================
-        var sourcesCore : Map<String, INotifier> = _core_source[ multitonKey ];
-        var targetClass : Class<Dynamic> = Type.getClass(target);
-        var metaData = Meta.getFields( targetClass );
+    static public function injectTo( target : Dynamic, multitonKey : String ) : Void {
+    //==================================================================================================
+        if(_multiton_sources.exists( multitonKey ) && _multiton_targets.exists( multitonKey ))
+        {
+            var sources : Map<String, Dynamic> = _multiton_sources.get( multitonKey );
+            var targets : Map<String, Map<String, String>> = _multiton_targets.get( multitonKey );
 
-        trace(metaData);
-        trace(Reflect.fields(target));
+            var classRefName:String = Type.getClassName(Type.getClass(target));
 
-        for (field in Reflect.fields(metaData)) {
-            trace("-> mapTarget: field = " + field + " field = " + Type.getClass(Reflect.field(target, field)) + " " + Type.getClass(Reflect.getProperty(target, field)));
-            trace("-> mapTarget: value = " + (Type.typeof(Reflect.field(target, field))));
+            if(targets.exists(classRefName))
+            {
+                var injectTargets:Map<String, String> = targets.get( classRefName );
+                var sourceRef:String;
+                for( fieldName in injectTargets.keys()) {
+                    sourceRef = injectTargets.get(fieldName);
+                    if( sources.exists(sourceRef) ) {
+                        trace("injectTo " + target + "; field > name = " + fieldName + "; source = " + sourceRef);
+                        Reflect.setField( target, fieldName, sources.get(sourceRef) );
+                    }
+                }
+            }
         }
     }
 
     //==================================================================================================
-    static public function mapInject( object : INotifier ) : Dynamic {
+    public static function clear( target : Dynamic, multitonKey : String ) : Void {
     //==================================================================================================
-        var multitonKey : String = object.getMultitonKey();
-        return null;
-    }
-
-    //==================================================================================================
-    static public function injectTo( target : Dynamic, to : INotifier ) : Void {
-    //==================================================================================================
-    }
-
-    //==================================================================================================
-    static public function hasTarget( target : Dynamic, multitonKey : String ) : Bool {
-    //==================================================================================================
-        var targets : Dynamic = _core_targets[ multitonKey ];
-        trace("\ttargets:", targets);
-        return targets && !(targets[ target ] == null);
-    }
-
-    //==================================================================================================
-    public static function unmapTarget( target : Dynamic, multitonKey : String ) : Void {
-    //==================================================================================================
+        if(_multiton_targets.exists( multitonKey ))
+        {
+            var targets : Map<String, Map<String, String>> = _multiton_targets.get( multitonKey );
+            var classRefName:String = Type.getClassName(Type.getClass(target));
+            if(targets.exists(classRefName))
+            {
+                var injectTargets:Map<String, String> = targets.get( classRefName );
+                for( fieldName in injectTargets.keys()) {
+                    Reflect.setField( target, fieldName, null );
+                }
+            }
+        }
     }
 
     //==================================================================================================
