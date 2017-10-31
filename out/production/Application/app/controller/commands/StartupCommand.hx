@@ -6,7 +6,7 @@ import nest.patterns.command.SimpleCommand;
 
 class StartupCommand extends SimpleCommand
 {
-    @inject public var userProxy:UserProxy;
+    @Inject public var userProxy:UserProxy;
 
     public function new () {}
 

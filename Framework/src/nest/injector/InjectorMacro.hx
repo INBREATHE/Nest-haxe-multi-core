@@ -40,7 +40,7 @@ class InjectorMacro
 
 		// add rtti to type
 		var rtti = infos.map(function (rtti) return macro $v{rtti});
-		if (rtti.length > 0) ref.meta.add('inject', rtti, ref.pos);
+		if (rtti.length > 0) ref.meta.add('Inject', rtti, ref.pos);
 	}
 
 	static function processField(field:ClassField, rttis:Array<String>):Void
@@ -49,7 +49,7 @@ class InjectorMacro
 
 		// find metadata
 		var meta = field.meta.get();
-		var inject = meta.find(function (meta) return meta.name == 'inject');
+		var inject = meta.find(function (meta) return meta.name == 'Inject');
 
 		// only process public fields with minject metadata
 		if (inject == null) return;

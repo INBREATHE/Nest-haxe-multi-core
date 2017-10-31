@@ -1,5 +1,4 @@
 package nest.core;
-import haxe.rtti.Meta;
 import nest.injector.Injector;
 import nest.interfaces.INotification;
 import nest.interfaces.ICommand;
@@ -35,17 +34,27 @@ class Controller implements IController
         Injector.mapTargetClass( commandClass, _multitonKey );
         _classMap.set( notificationName, commandClass );
     }
+
+    //==================================================================================================
     public function registerPoolCommand   ( notificationName : String, commandClass : Class<Dynamic> ) : Void {
+    //==================================================================================================
         var commandInstance : ICommand = Type.createEmptyInstance( commandClass );
         _commandsPool.set( notificationName, commandInstance );
     }
+
+    //==================================================================================================
     public function registerCountCommand   ( notificationName : String, commandClass : Class<Dynamic>, replyCount : Int ) : Void {}
+    //==================================================================================================
+
+    //==================================================================================================
     public function executeCommand         ( notification : INotification ) : Void {
+    //==================================================================================================
         var name:String = notification.getName();
         var commandClass : Class<Dynamic>;
         var commandInstance : ICommand;
 
-        if(_commandsPool.exists( name )) {
+        var isPoolCommand:Bool = _commandsPool.exists( name );
+        if( isPoolCommand ) {
             commandInstance = _commandsPool.get(name);
             commandClass = Type.getClass( commandInstance );
         } else {
@@ -56,10 +65,14 @@ class Controller implements IController
             } else throw 'NO COMMAND REGISTERED TO ${ name }';
         }
         commandInstance.execute( notification );
-        Injector.clear( commandInstance, _multitonKey );
+        if(!isPoolCommand) Injector.clear( commandInstance, _multitonKey );
     }
+
+    //==================================================================================================
     public function removeCommand          ( notificationName : String ) : Bool { return false; }
+    //==================================================================================================
     public function hasCommand             ( notificationName : String ) : Bool {
+    //==================================================================================================
         return _classMap.exists( notificationName );
     }
 

@@ -1,10 +1,10 @@
 package ;
 
-import nest.patterns.observer.Notification;
-import app.controller.commands.StartupCommand;
+import nest.entities.application.Application;
+import nest.entities.application.ApplicationMediator;
+import nest.entities.application.ApplicationFacade;
 import app.model.proxy.UserProxy;
 import openfl.display.Sprite;
-import nest.patterns.facade.Facade;
 
 class Main extends Sprite  {
 
@@ -16,12 +16,14 @@ class Main extends Sprite  {
     {
         super();
 
-        var facade:Facade = cast Facade.getInstance(CORE);
+        var app:Application = new Application();
+        var appFacade:ApplicationFacade = cast ApplicationFacade.getInstance(CORE);
+        var appMediator:ApplicationMediator = new ApplicationMediator(app);
 
-        facade.registerProxy( UserProxy );
+        appFacade.registerMediator( ApplicationMediator.NAME, appMediator );
 
-        facade.registerCommand( STARTUP, StartupCommand );
-        facade.exec( new Notification( STARTUP, facade.getProxy( UserProxy ) ));
-        facade.exec( new Notification( STARTUP ));
+        this.addChild(app);
+
+        appFacade.startup();
     }
 }

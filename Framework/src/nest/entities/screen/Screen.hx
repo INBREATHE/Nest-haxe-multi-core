@@ -17,23 +17,21 @@ class Screen extends Sprite implements IScreen
     public var rebuildable	: Bool = false;
 
     public function new( name : String ) {
+        super();
         this.name = name;
-        this.touchable = false;
     }
 
     //==================================================================================================
     public function show() : Void {
     //==================================================================================================
         isShown = true;
-        this.touchable = true;
     }
 
     //==================================================================================================
     public function hide( ?callback:Void->Void ) : Void {
     //==================================================================================================
         isShown = false;
-        this.touchable = false;
-        if(callback) callback();
+        if(callback != null) callback();
     }
 
     /**
@@ -56,8 +54,8 @@ class Screen extends Sprite implements IScreen
     }
 
     //==================================================================================================
-    public function disableInteractivity() : Void { this.touchable = false; }
-    public function enableInteractivity() : Void { this.touchable = true; }
+    public function disableInteractivity() : Void {  }
+    public function enableInteractivity() : Void {  }
     //==================================================================================================
 
     public function getEntityType() : EntityType { return EntityType.SCREEN; }

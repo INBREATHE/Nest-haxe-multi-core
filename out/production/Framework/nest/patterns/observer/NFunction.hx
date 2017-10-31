@@ -3,9 +3,9 @@ import nest.interfaces.INotification;
 class NFunction
 {
     public var name	: String;
-    public var func	: INotification->Void;
+    public var func	: Dynamic->Void;
 
-    public function new( name : String, func : INotification->Void ) {
+    public function new( name : String, func : Dynamic->Void ) {
         this.name = name;
         this.func = func;
     }

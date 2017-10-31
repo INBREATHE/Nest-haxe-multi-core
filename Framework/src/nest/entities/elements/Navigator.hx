@@ -36,7 +36,7 @@ class Navigator {
         if(_transition.isHidePossible) {
             _transition.hide(screen, isReturn);
         } else {
-            screen.hide(function() return _transition.hide( screen, isReturn ); );
+            screen.hide(function() {_transition.hide( screen, isReturn ); });
         }
     }
 

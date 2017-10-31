@@ -38,11 +38,11 @@ class Mediator extends Notifier implements IMediator
     private function ClearNotificationsLists():Void {
         var nf:NFunction;
         var counter:Int = _listNFunctions.length;
-        while(counter--) {
-            nf = _listNFunctions[counter]
+        while(counter-- > 0) {
+            nf = _listNFunctions[counter];
             nf.clear();
         }
-        _listNFunctions.length = 0;
-        _listNotifications.length = 0;
+        _listNFunctions = null;
+        _listNotifications = null;
     }
 }

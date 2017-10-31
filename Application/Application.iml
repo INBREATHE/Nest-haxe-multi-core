@@ -17,5 +17,16 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Framework" />
     <orderEntry type="library" name="openfl" level="project" />
+    <orderEntry type="module-library">
+      <library name="haxelib|openfl">
+        <CLASSES>
+          <root url="file://F:/SDK/Haxe/libs/openfl/6,3,0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://F:/SDK/Haxe/libs/openfl/6,3,0" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

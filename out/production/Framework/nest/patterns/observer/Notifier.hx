@@ -12,7 +12,6 @@ class Notifier implements INotifier
     public function initializeNotifier( multitonKey : String ) : Void {
     //==================================================================================================
         facade = Facade.getInstance( multitonKey );
-        if ( facade == null ) throw ( Facade.MULTITON_MSG + " : " + this );
     }
 
     //==================================================================================================

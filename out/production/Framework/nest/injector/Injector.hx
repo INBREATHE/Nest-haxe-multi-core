@@ -24,7 +24,7 @@ import haxe.rtti.Meta;
         var classRefName:String = Type.getClassName(classRef);
 
         var meta = Meta.getType(classRef);
-        var inject:Array<String> = cast meta.inject;
+        var inject:Array<String> = cast meta.Inject;
 
         if(!_multiton_targets.exists( multitonKey )) _multiton_targets.set( multitonKey, new Map<String, Map<String, String>>() );
         var targets : Map<String, Map<String, String>> = _multiton_targets.get( multitonKey );
