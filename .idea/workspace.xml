@@ -2,23 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412d5018-2e2b-423b-92ab-dc3119f9da9e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/bin/flash/bin/Application.swf" afterPath="$PROJECT_DIR$/Application/bin/flash/bin/Application.swf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Application/Main.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Application/app/controller/commands/StartupCommand.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Application/app/model/proxy/UserProxy.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Application/app/model/vo/UserVO.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/Controller.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/Model.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/View.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/injector/Injector.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IAsyncCommand.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/ICommand.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IController.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IFacade.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IMediator.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IModel.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IMultiton.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/INotification.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/INotifier.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IObserver.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IProxy.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/interfaces/IView.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/command/SimpleCommand.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/facade/Facade.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/mediator/Mediator.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/NFunction.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/Notification.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/Notifier.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/observer/Observer.hx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Framework/nest/patterns/proxy/Proxy.hx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/bin/flash/haxe/ApplicationMain.hx" afterPath="$PROJECT_DIR$/Application/bin/flash/haxe/ApplicationMain.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/Main.hx" afterPath="$PROJECT_DIR$/Application/src/Main.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareModelCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" afterPath="$PROJECT_DIR$/Application/src/app/controller/commands/prepare/PrepareViewCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/core/Controller.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/entities/application/ApplicationFacade.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/injector/Injector.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx" afterPath="$PROJECT_DIR$/Framework/src/nest/patterns/command/AsyncMacroCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Application/Main.hx" afterPath="$PROJECT_DIR$/out/production/Application/Main.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Application/app/controller/commands/StartupCommand.hx" afterPath="$PROJECT_DIR$/out/production/Application/app/controller/commands/StartupCommand.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/Controller.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/core/Controller.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/core/View.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/core/View.hx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Framework/nest/injector/Injector.hx" afterPath="$PROJECT_DIR$/out/production/Framework/nest/injector/Injector.hx" />
     </list>
     <ignored path="Haxe-Framework-Nest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +116,8 @@
       <file leaf-file-name="StartupCommand.hx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -277,340 +290,6 @@
               <option name="myItemId" value="nest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="observer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mediator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patterns" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="injector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="popup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -729,20 +408,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="prepare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Haxe-Framework-Nest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1017,7 +682,7 @@
       <option name="presentableId" value="Default" />
       <updated>1509359164603</updated>
       <workItem from="1509359169090" duration="43859000" />
-      <workItem from="1509426932135" duration="20558000" />
+      <workItem from="1509426932135" duration="20818000" />
     </task>
     <task id="LOCAL-00001" summary="Injector with basic meta @inject keyword for Proxies only">
       <created>1509427187838</created>
@@ -1040,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509465920243</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Correction for AsyncCommand registration">
+      <created>1509467622005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509467622005</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64417000" />
+    <option name="totallyTimeSpent" value="64677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1315" height="1080" extended-state="0" />
@@ -1089,7 +761,8 @@
     <MESSAGE value="Injector with basic meta @inject keyword for Proxies only" />
     <MESSAGE value="Registration for Mediators, ScreenMediator and PopupMediator" />
     <MESSAGE value="Additional files for previous commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional files for previous commit" />
+    <MESSAGE value="Correction for AsyncCommand registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction for AsyncCommand registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1502,8 +1175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/app/controller/commands/StartupCommand.hx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
