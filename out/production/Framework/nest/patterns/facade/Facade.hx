@@ -1,4 +1,5 @@
 package nest.patterns.facade;
+
 import nest.core.View;
 import nest.core.Model;
 import nest.core.Controller;
