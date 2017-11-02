@@ -30,22 +30,31 @@ class ScreenMediator extends Mediator {
         _screen.addEventListener( Event.ADDED_TO_STAGE, Handle_AddComponentToStage );
     }
 
+    /**
+	 * When screen mediator ready to use we first register him in ScreenProxy
+	 */
+    //==================================================================================================
+    override public function onRegister() : Void {
+    //==================================================================================================
+        this.exec( ScreenCommands.REGISTER, this.getViewComponent(), this.getMediatorName() );
+    }
+
     public var isReady(default, default) : Bool;
 
     private function Handle_AddComponentToStage( e : Event ) : Void {
         _screen.onAdded();
         SetupComponentListeners();
         _screen.removeEventListener(	Event.ADDED_TO_STAGE, 		Handle_AddComponentToStage);
-        _screen.addEventListener(	Event.REMOVED_FROM_STAGE, 	Handle_RemoveComponentFromStage);
-        _screen.addEventListener(	Event.TRIGGERED, 			ComponentTrigger);
+        _screen.addEventListener(	    Event.REMOVED_FROM_STAGE, 	Handle_RemoveComponentFromStage);
+//        _screen.addEventListener(	Event.TRIGGERED, 			ComponentTrigger);
     }
 
     private function Handle_RemoveComponentFromStage( e : Event ) : Void {
         _screen.onRemoved();
         RemoveComponentListeners();
-        _screen.addEventListener(	Event.ADDED_TO_STAGE, 		Handle_AddComponentToStage);
+        _screen.addEventListener(	    Event.ADDED_TO_STAGE, 		Handle_AddComponentToStage);
         _screen.removeEventListener(	Event.REMOVED_FROM_STAGE, 	Handle_RemoveComponentFromStage);
-        _screen.removeEventListener(	Event.TRIGGERED, 			ComponentTrigger);
+//        _screen.removeEventListener(	Event.TRIGGERED, 			ComponentTrigger);
         if(_screen.rebuildable) _screen.clear();
     }
 
@@ -60,7 +69,7 @@ class ScreenMediator extends Mediator {
     //==================================================================================================
     override public function listNotificationInterests() : Array<String> {
     //==================================================================================================
-        return Array<String>[
+        return [
             _dataNotification
         ];
     }
@@ -69,8 +78,9 @@ class ScreenMediator extends Mediator {
     override public function handleNotification( notification : INotification ) : Void {
     //==================================================================================================
         var name:String = notification.getName();
+        trace("> handleNotification : " + name);
         if(name == _dataNotification) {
-            SetupScreenData( body );
+            SetupScreenData( notification.getBody() );
             ContentReady();
         }
     }
@@ -78,10 +88,14 @@ class ScreenMediator extends Mediator {
     //==================================================================================================
     private function ContentReady() : Void {
     //==================================================================================================
-        if(_dataForScreen && _dataForScreen.hasContentReadyCallback())
+        if(_dataForScreen != null && _dataForScreen.hasContentReadyCallback())
         _dataForScreen.contentReadyCallback();
 
-        this.send( String(ApplicationNotification.SHOW_SCREEN), this.screen, _dataForScreen.previous ? Screen.PREVIOUS : screen.name );
+        this.send(
+            ApplicationNotification.SHOW_SCREEN,
+            _screen,
+            _dataForScreen.previous ? Screen.PREVIOUS : _screen.name
+        );
 
         _dataForScreen = null;
         _isReady = true;
@@ -97,8 +111,11 @@ class ScreenMediator extends Mediator {
         _dataForScreen = screenData;
         if( _screen.rebuildable ) {
             _isReady = false;
-            var getDataMethod:INotification->Void = facade.hasCommand(_dataRequest) ? this.exec : this.send;
-            getDataMethod( _dataRequest, _dataForScreen.data, _dataNotification );
+            if( facade.hasCommand(_dataRequest) ) {
+                this.exec( _dataRequest, _dataForScreen.data, _dataNotification );
+            } else {
+                this.send( _dataRequest, _dataForScreen.data, _dataNotification );
+            }
         } else {
             ContentReady();
         }

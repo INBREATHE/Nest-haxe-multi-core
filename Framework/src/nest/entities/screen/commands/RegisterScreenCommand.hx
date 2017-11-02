@@ -11,8 +11,8 @@ class RegisterScreenCommand extends SimpleCommand
     {
         var screen:Screen = cast notification.getBody();
         var mediatorName:String = notification.getType();
-        var screenCache:ScreenCache = new ScreenCache(Screen(screen), mediatorName);
-        screensProxy.cacheScreenByName(Screen(screen).name, screenCache);
+        var screenCache:ScreenCache = new ScreenCache(screen, mediatorName);
+        screensProxy.cacheScreenByName(screen.name, screenCache);
     }
 
     public function new() {}

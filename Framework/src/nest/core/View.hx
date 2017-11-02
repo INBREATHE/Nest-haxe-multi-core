@@ -43,7 +43,15 @@ class View implements IView
         }
     }
 
-    public function notifyObservers   ( notification : INotification ) : Void {}
+    //==================================================================================================
+    public function notifyObservers   ( notification : INotification ) : Void {
+    //==================================================================================================
+        var notificationName:String = notification.getName();
+        if( observerMap.exists( notificationName ) ) {
+            var _observers:Array<IObserver> = observerMap.get( notificationName );
+            for(observer in _observers) observer.notifyObserver( notification );
+        }
+    }
 
     //==================================================================================================
     public function registerMediator  ( mediatorName:String, mediator:IMediator ) : Void {
@@ -78,7 +86,7 @@ class View implements IView
         while(counter-- > 0) {
             nFunction = interestsNFunctions[counter];
             notifyName = nFunction.name;
-            notifyMethod = nFunction.func;
+            notifyMethod = function(note:INotification) nFunction.func(note.getBody());
             trace("> registerMediator -> nfunction: name = " + notifyName + " | method = " + notifyMethod);
             registerObserver( notifyName, new Observer( notifyMethod, mediator ) );
         }
@@ -86,7 +94,7 @@ class View implements IView
         mediator.onRegister();
     }
     public function removeMediator    ( mediatorName : String ) : IMediator { return null; }
-    public function hasMediator       ( mediatorName : String ) : Bool { return false; }
-    public function getMediator       ( mediatorName : String ) : IMediator { return null; }
+    public function hasMediator       ( mediatorName : String ) : Bool { return mediatorMap.exists( mediatorName ); }
+    public function getMediator       ( mediatorName : String ) : IMediator { return cast mediatorMap.get( mediatorName ); }
 
 }

@@ -1,9 +1,12 @@
 package nest.entities.application;
 
-import nest.patterns.observer.Notification;
+import nest.entities.screen.commands.RemoveScreenCommand;
+import nest.entities.screen.commands.ChangeScreenCommand;
+import nest.entities.screen.commands.RegisterScreenCommand;
+import nest.entities.screen.ScreenCommands;
+import nest.entities.screen.ScreensProxy;
 import nest.patterns.facade.Facade;
 import nest.interfaces.IFacade;
-import nest.patterns.facade.Facade;
 
 class ApplicationFacade extends Facade
 {
@@ -19,4 +22,22 @@ class ApplicationFacade extends Facade
         READY(default, never)		: String = "nest_command_application_ready";
     public static var
         CORE(default, never)		: String = "nest_application_core";
+
+    //==================================================================================================
+    override public function initializeModel():Void {
+    //==================================================================================================
+        super.initializeModel();
+
+        registerProxy( ScreensProxy );
+    }
+
+    //==================================================================================================
+    override public function initializeController() : Void {
+    //==================================================================================================
+        super.initializeController();
+
+        registerCommand( ScreenCommands.REGISTER, 	RegisterScreenCommand 	);
+        registerCommand( ScreenCommands.CHANGE, 	ChangeScreenCommand 	);
+        registerCommand( ScreenCommands.REMOVE, 	RemoveScreenCommand 	);
+    }
 }

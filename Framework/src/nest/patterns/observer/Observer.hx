@@ -8,7 +8,7 @@ class Observer  implements IObserver
     private var _context    : Dynamic;
 
     public function new(
-        notify : INotification->Void,
+        notify  : INotification->Void,
         context : Dynamic
     ) {
         _notify = notify;

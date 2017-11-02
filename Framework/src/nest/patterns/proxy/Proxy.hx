@@ -8,12 +8,13 @@ class Proxy extends Notifier implements IProxy
     private var _proxyName : String;
 
     public function new( ?data : Dynamic ) {
-        if ( data != null ) setData( data );
+        trace(" > constructor: data = " + data);
+        if ( data != null ) this.setData( data );
         _proxyName = Type.getClassName( Type.getClass(this) );
     }
 
     public function getProxyName() : String { return _proxyName; }
-    public function setData     ( data : Dynamic ) : Void { this._data = data; }
+    public function setData     ( data : Dynamic ) : Void { _data = data; }
     public function getData     () : Dynamic { return _data; }
 
     public function onRegister  () : Void {}
